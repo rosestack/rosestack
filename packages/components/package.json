@@ -1,0 +1,21 @@
+{
+  "name": "@rosestack/components",
+  "version": "1.0.3",
+  "main": "source/index.tsx",
+  "scripts": {
+    "lint": "eslint --ext .tsx source --fix",
+    "publish-me": "npm publish --access public"
+  },
+  "peerDependencies": {
+    "@mantine/core": "^6.0.16",
+    "@mantine/prism": "^6.0.16",
+    "@octokit/rest": "^19.0.13",
+    "react-icons": "^4.10.1"
+  },
+  "files": [
+    "source"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

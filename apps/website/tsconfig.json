@@ -1,0 +1,51 @@
+{
+  "extends": "@meslzy/tsconfig/react",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "~api/*": [
+        "./api/*"
+      ],
+      "~app/*": [
+        "./app/*"
+      ],
+      "~components/*": [
+        "./components/*"
+      ],
+      "~layouts/*": [
+        "./layouts/*"
+      ],
+      "~config/*": [
+        "./config/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "next.config.js",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    ".next"
+  ]
+}
