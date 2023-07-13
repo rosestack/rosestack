@@ -1,4 +1,4 @@
-import { defineRoserepo, Runner } from "roserepo";
+import { defineRoserepo, Runner, Cache } from "roserepo";
 
 export default defineRoserepo({
   root: true,
@@ -16,6 +16,11 @@ export default defineRoserepo({
       build: Runner.many({
         parallel: true,
         throwOnError: true,
+        cache: Cache.file({
+          include: [
+            "src/**/*",
+          ],
+        }),
       }),
       lint: Runner.many({
         parallel: false,
