@@ -1,0 +1,20 @@
+name: Update readme.md
+
+on: [ workflow_dispatch ]
+
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm install @octokit/action
+      - name: Update README
+        run: node scripts/update-readme.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

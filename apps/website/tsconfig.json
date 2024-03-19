@@ -1,0 +1,70 @@
+{
+  "extends": "@meslzy/tsconfig",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable"
+    ],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "rootDir": "src",
+    "baseUrl": "src",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "~api/*": [
+        "./api/*"
+      ],
+      "~app/*": [
+        "./app/*"
+      ],
+      "~common/*": [
+        "./common/*"
+      ],
+      "~components/*": [
+        "./components/*"
+      ],
+      "~features/*": [
+        "./features/*"
+      ],
+      "~layouts/*": [
+        "./layouts/*"
+      ],
+      "~theme/*": [
+        "./theme/*"
+      ],
+      "~types/*": [
+        "./types/*"
+      ],
+      "~utils/*": [
+        "./utils/*"
+      ],
+      "~styles/*": [
+        "../styles/*"
+      ],
+    },
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "allowJs": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "module": "esnext",
+    "moduleResolution": "node",
+  },
+  "include": [
+    "src",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    ".next"
+  ]
+}

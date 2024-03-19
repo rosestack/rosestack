@@ -1,0 +1,11 @@
+@import "@mantine/core/styles.css";
+@import "@mantine/code-highlight/styles.css";
+
+@layer reset, base, tokens, recipes, utilities;
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}

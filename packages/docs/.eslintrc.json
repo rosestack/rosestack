@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@meslzy/eslint-config/react",
+    "@meslzy/eslint-config/next"
+  ]
+}

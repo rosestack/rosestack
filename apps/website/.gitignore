@@ -1,0 +1,8 @@
+# next output
+.next/
+
+# next env
+next-env.d.ts
+
+# panda
+styled

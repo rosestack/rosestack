@@ -1,0 +1,27 @@
+{
+  "name": "rosestack",
+  "description": "astonishing open-source software",
+  "type": "module",
+  "scripts": {
+    "dev": "roserepo run dev",
+    "start": "roserepo run start",
+    "lint": "roserepo run lint",
+    "publish": "roserepo publish",
+    "chanegset": "roserepo changeset",
+    "upgrade": "roserepo upgrade"
+  },
+  "devDependencies": {
+    "@meslzy/eslint-config": "^0.5.7",
+    "@meslzy/tsconfig": "^0.2.2",
+    "@types/node": "^20.11.29",
+    "eslint": "^8.57.0",
+    "rosepack": "^1.0.19",
+    "roserepo": "^1.0.19",
+    "typescript": "^5.4.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "private": true
+}

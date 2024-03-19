@@ -1,0 +1,30 @@
+{
+  "name": "@rosestack/docs",
+  "version": "1.0.1",
+  "type": "module",
+  "bin": {
+    "rosestack": "source/bin/index.js"
+  },
+  "main": "source/main/index.tsx",
+  "scripts": {
+    "lint": "eslint --ext .tsx source --fix",
+    "publish-me": "npm publish --access public"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21"
+  },
+  "peerDependencies": {
+    "@mantine/core": "^7.6.2",
+    "@mantine/code-highlight": "^7.6.2",
+    "@tabler/icons-react": "^3.1.0"
+  },
+  "files": [
+    "source"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

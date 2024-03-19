@@ -1,0 +1,14 @@
+{
+  "extends": "@meslzy/tsconfig",
+  "compilerOptions": {
+    "rootDir": "source",
+    "lib": [
+      "dom",
+      "dom.iterable"
+    ],
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "source"
+  ]
+}
