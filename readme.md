@@ -15,8 +15,13 @@
 
 ## Software
 
-- [rosepack](https://rosestack.meslzy.com/rosepack)
 - [roserepo](https://rosestack.meslzy.com/roserepo)
+- [rosection](https://rosestack.meslzy.com/rosection)
+- [rosepack](https://rosestack.meslzy.com/rosepack)
+- [rosectron](https://rosestack.meslzy.com/rosectron)
+- [rosepanel](https://rosestack.meslzy.com/rosepanel)
+- [rosetil](https://rosestack.meslzy.com/rosetil)
+- [roserc](https://rosestack.meslzy.com/roserc)
 
 ---
 
